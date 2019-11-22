@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="12"
+    android:paddingHorizontal="5dip">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="5dip"
+        android:weightSum="10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="LOTERIAPP"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                android:layout_weight="5"
+                android:textAlignment="center"
+                android:layout_marginHorizontal="5dip"/>
+
+            <Button
+                android:id="@+id/reiniciar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#9AFE2E"
+                android:onClick="onClick"
+                android:text="Jugar otra vez"
+                android:layout_weight="5"
+                android:layout_marginHorizontal="5dip"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:weightSum="12"
+        android:paddingVertical="5dip">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ib1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:onClick="onClick"
+            android:scaleType="fitCenter"
+            android:background="@drawable/gallo"
+            android:layout_marginHorizontal="5dip"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ib2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:onClick="onClick"
+            android:scaleType="fitCenter"
+            android:background="@drawable/diablo"
+            android:layout_marginHorizontal="5dip"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ib3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:onClick="onClick"
+            android:scaleType="fitCenter"
+            android:background="@drawable/dama"
+            android:layout_marginHorizontal="5dip"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ib4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:onClick="onClick"
+            android:scaleType="fitCenter"
+            android:background="@drawable/catrin"
+            android:layout_marginHorizontal="5dip"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="12"
+        android:layout_weight="3"
+        android:paddingVertical="5dip">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ib5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:onClick="onClick"
+            android:scaleType="fitCenter"
+            android:background="@drawable/arbol"
+            android:layout_marginHorizontal="5dip"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ib6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:layout_weight="3"
+            android:background="@drawable/melon"
+            android:onClick="onClick"
+            android:layout_marginHorizontal="5dip"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ib7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:layout_weight="3"
+            android:background="@drawable/valiente"
+            android:onClick="onClick"
+            android:layout_marginHorizontal="5dip"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ib8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:layout_weight="3"
+            android:background="@drawable/gorrito"
+            android:onClick="onClick"
+            android:layout_marginHorizontal="5dip"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="12"
+        android:layout_weight="3"
+        android:paddingVertical="5dip">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ib9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:layout_weight="3"
+            android:background="@drawable/garza"
+            android:onClick="onClick"
+            android:layout_marginHorizontal="5dip"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ib10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:layout_weight="3"
+            android:background="@drawable/pajaro"
+            android:alpha="1"
+            android:onClick="onClick"
+            android:layout_marginHorizontal="5dip"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ib11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:layout_weight="3"
+            android:background="@drawable/mano"
+            android:onClick="onClick"
+            android:layout_marginHorizontal="5dip"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ib12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:layout_weight="3"
+            android:background="@drawable/bota"
+            android:onClick="onClick"
+            android:layout_marginHorizontal="5dip"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="12"
+        android:layout_weight="3"
+        android:paddingVertical="5dip">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ib13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:layout_weight="3"
+            android:background="@drawable/sandia"
+            android:onClick="onClick"
+            android:layout_marginHorizontal="5dip"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ib14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:layout_weight="3"
+            android:background="@drawable/tambor"
+            android:onClick="onClick"
+            android:layout_marginHorizontal="5dip"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ib15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:layout_weight="3"
+            android:background="@drawable/camaron"
+            android:onClick="onClick"
+            android:layout_marginHorizontal="5dip"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ib16"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:layout_weight="3"
+            android:background="@drawable/jaras"
+            android:onClick="onClick"
+            android:layout_marginHorizontal="5dip"/>
+    </LinearLayout>
+
+</LinearLayout>
